@@ -18,6 +18,7 @@ You can measure the Rand Index of the segmentation against its ground-truth. See
 ### Object coverage rate & coverage quality
 
 ## Requirements
-Our benchmark and tools are mainly tested in Ubuntu 14.04 and ROS Indigo (with Gazebo 2.2.3), although other environmnet may still work. If you are a novice to ROS, you can get more information from [here](www.ros.org)
+Our benchmark and tools are mainly tested in Ubuntu 14.04 and ROS Indigo (with Gazebo 2.2.3), although other environmnet may still work. If you are a novice to ROS, you can get more information from [here](www.ros.org).
 
 ## Usage
+Each scene directory include a number of model directories and a `room.world` file. Copy these models into your `.gazebo/models/` and run `gazebo room.world` to carry out a virtual scene in Gazebo. You can refer to `tools/json_2_world.py` on how to transfer a SUNCG `house.json` file into a Gazebo scene, however you may have to add walls by yourself.
