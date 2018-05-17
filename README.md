@@ -5,15 +5,16 @@ This benchmark is an accompaniment to our SIGGRAPH'18 paper *Object-Aware Guidan
 If you find our work useful in your research, please consider citing:
 
 ## Introduction
-The Object-Aware Scanning Benchmark (OASC), which aims to facilitate quantitative evaluation of object-aware scene scanning and reconstruction, is a collection of Gazebo virtual scenes, based on existing scene dataset SUNCG[Song et al. 2017]. We select 66 appropriate human-modeled synthetic scenes which are suitable for robot autoscanning and slightly adjust them to avoid collision. The collection contains 5 scene categories, including bedroom, living room, kitchen, bathroom and office.
+The Object-Aware Scanning Benchmark (OASC), which aims to facilitate quantitative evaluation of object-aware scene scanning and reconstruction, is a collection of Gazebo virtual scenes, based on existing scene dataset [SUNCG](http://suncg.cs.princeton.edu/). We select 66 appropriate human-modeled synthetic scenes which are suitable for robot autoscanning and slightly adjust them to avoid collision. The collection contains 5 scene categories, including bedroom, living room, kitchen, bathroom and office.
 
 ## Evaluation metrics
-You can evaluate the performance of object-aware scanning from several aspects.
+You can evaluate the performance of object-aware scanning from several aspects:
 ### Object recognition
-For object recognition task, each object class label can be found in SUNCG/ModelCategoryMapping.csv. We use SUNCG model id as Gazebo model name, so the correspondence between model name and object category is straightforward.
+For object recognition task, each object class label can be found in `SUNCG/ModelCategoryMapping.csv`. We use SUNCG model id as Gazebo model name, so the correspondence between model name and object category is straightforward.
 ### Single-view object detection
 You can use both original rendering RGBD images from SUNCG or simulated color and depth images from Gazebo, however the latter lacks of ground truth and you may have to annotate by yourself.
 ### Object-level segmentation
+You can measure the Rand Index of the segmentation against its ground-truth. See `tools/RandIndex.cpp` for details.
 ### Object coverage rate & coverage quality
 
 ## Requirements
