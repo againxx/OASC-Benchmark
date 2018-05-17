@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name='73'>
+    <pose>0 0 0 0 0 0</pose>
+    <static>true</static>
+    <link name='link'>
+      <collision name='collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.0004 1.30004 2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh><uri>model://73/73.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
