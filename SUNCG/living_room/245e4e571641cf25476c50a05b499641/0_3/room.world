@@ -1,0 +1,1975 @@
+<sdf version='1.4'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <gravity>0 0 -9.8</gravity>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <model name='262_0'>
+      <pose>-2.456 1.98866 0 0 0 -1.5708</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.09003 1.06 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://262/262.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='262_1'>
+      <pose>2.248 2.07266 0 0 0 -1.5708</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.09003 1.06 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://262/262.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='156_0'>
+      <pose>-0.236001 2.03667 0 0 0 -1.5708</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.92 2.15 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://156/156.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='153_0'>
+      <pose>-0.415998 0.65667 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.86 1 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://153/153.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='550_0'>
+      <pose>-0.428001 0.65667 0 0 0 -1.5708</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.58659 0.984278 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://550/550.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='242_0'>
+      <pose>2.428 -1.88733 0 -0 -0 -3.14159</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.66 2.18 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://242/242.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='215_0'>
+      <pose>-2.036 -3.02733 1.7 0 -0 1.5708</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.050075 0.979999 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://215/215.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='198_0'>
+      <pose>-2.012 -2.94333 0 0 -0 1.54043</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.533104 1.11 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://198/198.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='209_0'>
+      <pose>2.908 0.446666 0.8 0 -0 3.14159</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.175 1.4 2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://209/209.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-4.86855 -0.222057 12.552 0 1.2338 0.076014</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+    <model name='valve_wall'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-2 3 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_0'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-1 3 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_1'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>0 3 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_2'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-3 3 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_3'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-4 3 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_4'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-4 2 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_5'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-4 1 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_6'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-4 0 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_7'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-4 -1 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_8'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-4 -2 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_9'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>1 3 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_10'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>2 3 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_11'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>3 3 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_12'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>4 2 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_13'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>4 1 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_14'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>4 0 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_15'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>4 -1 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_16'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>4 -2 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_17'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>4 -3 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_18'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-4 -3 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_19'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>4 -4 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_20'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.00476 0.6096 1.2192 0 -0 1.5708</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00357175 -0.00453619 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-4 -4 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_21'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-4 -4 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_22'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-3 -4 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_23'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-2 -4 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_24'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>-1 -4 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_25'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>0 -4 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_26'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>1 -4 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_27'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>2 -4 0 0 -0 0</pose>
+    </model>
+    <model name='valve_wall_28'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <pose>0.6096 0.00476 1.2192 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0 0 0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <pose>-0.00453619 -0.00357175 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://drc_practice_valve_wall/meshes/five_dice_wall.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose>3 -4 0 0 -0 0</pose>
+    </model>
+    <state world_name='default'>
+      <sim_time>254 701000000</sim_time>
+      <real_time>255 655615306</real_time>
+      <wall_time>1526748385 182242538</wall_time>
+      <model name='153_0'>
+        <pose>-0.415998 0.65667 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-0.415998 0.65667 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='156_0'>
+        <pose>-0.235999 2.44957 0 0 0 -1.5708</pose>
+        <link name='link'>
+          <pose>-0.235999 2.44957 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='198_0'>
+        <pose>-2.02937 -3.51531 0 0 -0 1.54043</pose>
+        <link name='link'>
+          <pose>-2.02937 -3.51531 0 0 -0 1.54043</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='209_0'>
+        <pose>3.88828 0.446663 0.8 0 -0 3.14159</pose>
+        <link name='link'>
+          <pose>3.88828 0.446663 0.8 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='215_0'>
+        <pose>-2.036 -3.95609 1.7 0 -0 1.5708</pose>
+        <link name='link'>
+          <pose>-2.036 -3.95609 1.7 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='242_0'>
+        <pose>3.62378 -1.88733 0 0 0 -3.14159</pose>
+        <link name='link'>
+          <pose>3.62378 -1.88733 0 0 0 -3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='262_0'>
+        <pose>-2.456 2.38113 0 0 0 -1.5708</pose>
+        <link name='link'>
+          <pose>-2.456 2.38113 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='262_1'>
+        <pose>2.248 2.35752 -0 0 0 -1.5708</pose>
+        <link name='link'>
+          <pose>2.248 2.35752 -0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='550_0'>
+        <pose>-0.428005 -0.513514 0 0 0 -1.5708</pose>
+        <link name='link'>
+          <pose>-0.428005 -0.513514 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall'>
+        <pose>-2 3 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-2 3 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_0'>
+        <pose>-1 3 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-1 3 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_1'>
+        <pose>0 3 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>0 3 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_10'>
+        <pose>2 3 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>2 3 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_11'>
+        <pose>3 3 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>3 3 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_12'>
+        <pose>4 2 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>4 2 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_13'>
+        <pose>4 1 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>4 1 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_14'>
+        <pose>4 0 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>4 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_15'>
+        <pose>4 -1 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>4 -1 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_16'>
+        <pose>4 -2 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>4 -2 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_17'>
+        <pose>4 -3 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>4 -3 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_18'>
+        <pose>-4 -3 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-4 -3 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_19'>
+        <pose>4 -4 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>4 -4 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_2'>
+        <pose>-3 3 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-3 3 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_20'>
+        <pose>-4 -4 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-4 -4 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_21'>
+        <pose>-4 -4 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-4 -4 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_22'>
+        <pose>-3 -4 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-3 -4 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_23'>
+        <pose>-2 -4 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-2 -4 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_24'>
+        <pose>-1 -4 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-1 -4 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_25'>
+        <pose>0 -4 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>0 -4 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_26'>
+        <pose>1 -4 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>1 -4 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_27'>
+        <pose>2 -4 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>2 -4 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_28'>
+        <pose>3 -4 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>3 -4 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_3'>
+        <pose>-4 3 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-4 3 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_4'>
+        <pose>-4 2 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-4 2 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_5'>
+        <pose>-4 1 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-4 1 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_6'>
+        <pose>-4 0 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-4 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_7'>
+        <pose>-4 -1 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-4 -1 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_8'>
+        <pose>-4 -2 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>-4 -2 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='valve_wall_9'>
+        <pose>1 3 0 0 -0 0</pose>
+        <link name='link'>
+          <pose>1 3 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+    </state>
+  </world>
+</sdf>
