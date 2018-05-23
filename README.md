@@ -3,6 +3,17 @@ This benchmark is an accompaniment to our SIGGRAPH'18 paper *Object-Aware Guidan
 
 ## Citation
 If you find our work useful in your research, please consider citing:
+```
+@article {liu_nbo_sig18,
+    title = {Object-Aware Guidance for Autonomous Scene Reconstruction},
+    author = {Ligang Liu and Xi Xia and Han Sun and Qi Shen and Juzhan Xu and Bin Chen and Hui Huang and Kai Xu},
+    journal = {ACM Transactions on Graphics},
+    volume = {37},
+    number = {4},
+    pages = {Article 104},
+    year = {2018}
+}
+```
 
 ## Introduction
 The Object-Aware Scanning Benchmark (OASC), which aims to facilitate quantitative evaluation of object-aware scene scanning and reconstruction, is a collection of Gazebo virtual scenes, based on existing scene dataset [SUNCG](http://suncg.cs.princeton.edu/). We select 66 appropriate human-modeled synthetic scenes which are suitable for robot autoscanning and slightly adjust them to avoid collision. The collection contains 5 scene categories, including bedroom, living room, kitchen, bathroom and office.
