@@ -1,5 +1,5 @@
 # OASC-Benchmark
-This benchmark is an accompaniment to our SIGGRAPH'18 paper *Object-Aware Guidance for Autonomous Scene Reconstruction*. You can find more information from our [paper](#) and [project website](#).
+This benchmark is an accompaniment to our SIGGRAPH'18 paper *Object-Aware Guidance for Autonomous Scene Reconstruction*. You can find more information from our [paper](http://kevinkaixu.net/papers/liu_sig18_nbo.pdf) and [project website](http://kevinkaixu.net/projects/nbo.html).
 
 ## Citation
 If you find our work useful in your research, please consider citing:
